@@ -99,7 +99,7 @@ config =
      * e.g. [1000, 1001, 1002]
      */
     exclude_teams : function(team) {
-        if( [1000, 1001, 1002].indexOf(team.getId()) >= 0 )
+        if( [2, 155, 321, 328, 345, 353, 377, 384, 385, 386, 387, 388, 389, 390, 318, 319, 320].indexOf(team.getId()) >= 0 )
             return true;
         return false;
     },
@@ -138,10 +138,10 @@ config =
      * Specify whether to launch award mode at startup.
      * NOTE: While this option is off, one can enter to award mode by adding '?award=true' into URL.
      */
-    award_mode         : false,
+    award_mode         : true,
 
     /** Specify whether to hide the name and affiliation for unrevealed team in award mode. */
-    award_hide_name    : true,
+    award_hide_name    : false,
 
     /**
      * For the purpose of simulating award ceremony with ease,
